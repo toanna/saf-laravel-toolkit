@@ -14,7 +14,7 @@
     "require": {
         "php": ">=7.1",
         "laravel/framework": ">=5.5.0",
-        "toanna/laravel-5-layer": ">=1.0.0",
+        "toanna/laravel-5-layer": ">=1.2.0",
         "elasticsearch/elasticsearch": "^6.0",
         "ruflin/elastica": "^6.0@dev"
     },
