@@ -1,5 +1,5 @@
 <?php
-namespace Toanna\SAFLaravelToolkit;
+namespace SAFLaravelToolkit;
 use Illuminate\Support\ServiceProvider;
 class SAFToolkitServiceProvider extends ServiceProvider
 {
