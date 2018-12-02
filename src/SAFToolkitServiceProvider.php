@@ -12,6 +12,7 @@ class SAFToolkitServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->commands([
+                Console\AbstractionMakeCommand::class
             ]);
         }
     }
