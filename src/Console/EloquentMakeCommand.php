@@ -2,33 +2,33 @@
 
 namespace Toanna\SAFLaravelToolkit\Console;
 
-class AbstractionMakeCommand extends \Toanna\Laravel5Layer\Console\AbstractionMakeCommand
+class EloquentMakeCommand extends \Toanna\Laravel5Layer\Console\EloquentMakeCommand
 {
     /**
      * The console command name.
      *
      * @var string
      */
-    protected $name = 'saf:abstraction';
+    protected $name = 'saf:eloquent';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create a new Abstraction Interface';
+    protected $description = 'Create a new Eloquent ORM Class';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'saf:abstraction {name}';
+    protected $signature = 'saf:eloquent {name}';
 
     /**
      * The type of class being generated.
      *
      * @var string
      */
-    protected $type = 'saf abstraction';
+    protected $type = 'saf eloquent';
 }
