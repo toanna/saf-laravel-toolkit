@@ -1,6 +1,6 @@
 <?php
 
-namespace SAFLaravelToolkit\Console;
+namespace Toanna\SAFLaravelToolkit\Console;
 
 class AbstractionMakeCommand extends \Toanna\Laravel5Layer\Console\AbstractionMakeCommand
 {

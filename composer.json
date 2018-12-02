@@ -19,14 +19,14 @@
     "require-dev": {},
     "autoload": {
         "psr-4": {
-            "Toanna\\Laravel5Layer\\": "src"
+            "Toanna\\SAFLaravelToolkit\\": "src"
         }
     },
     "autoload-dev": {},
     "extra": {
         "laravel": {
             "providers": [
-                "SAFLaravelToolkit\\SAFToolkitServiceProvider"
+                "Toanna\\SAFLaravelToolkit\\SAFToolkitServiceProvider"
             ]
         }
     }
