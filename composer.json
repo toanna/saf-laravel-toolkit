@@ -1,6 +1,6 @@
 {
-    "name": "toanna/saf-toolkit",
-    "description": "A dev toolkit for SAF's Laravel Developers",
+    "name": "toanna/saf-laravel-toolkit",
+    "description": "A development toolkit for SAF's Laravel Developers",
     "type": "package",
     "license": "MIT",
     "authors": [
