@@ -1,0 +1,33 @@
+{
+    "name": "toanna/saf-toolkit",
+    "description": "A dev toolkit for SAF's Laravel Developers",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AT Nguyen",
+            "email": "anhtoan.dev@gmail.com",
+            "homepage": "https://nguyenanhtoan.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": ">=5.5.0",
+        "toanna/laravel-5-layer": ">=1.0.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Toanna\\Laravel5Layer\\": "src"
+        }
+    },
+    "autoload-dev": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Toanna\\SAFToolkit\\SAFToolkitServiceProvider"
+            ]
+        }
+    }
+}
