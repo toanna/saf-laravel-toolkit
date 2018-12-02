@@ -8,7 +8,7 @@ class InitializeCommand extends \Toanna\Laravel5Layer\Console\InitializeCommand
      *
      * @var string
      */
-    protected $name = '5l:init';
+    protected $name = 'saf:init';
     /**
      * The console command description.
      *
@@ -20,14 +20,14 @@ class InitializeCommand extends \Toanna\Laravel5Layer\Console\InitializeCommand
      *
      * @var string
      */
-    protected $signature = '5l:init';
+    protected $signature = 'saf:init';
 
     /**
      * The type of class being generated.
      *
      * @var string
      */
-    protected $type = '5l init';
+    protected $type = 'saf init';
 
     /**
      * CUSTOM
