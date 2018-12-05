@@ -21,8 +21,6 @@ Folder structure:
 ```$xslt
 /app
     /Abstraction
-        /ExternalServiceInterface
-        /RepositoryInterface
     /Business
     /BusinessService
     /Common
