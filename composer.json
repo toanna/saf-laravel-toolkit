@@ -16,7 +16,8 @@
         "laravel/framework": ">=5.5.0",
         "toanna/laravel-5-layer": ">=1.2.0",
         "elasticsearch/elasticsearch": "^6.0",
-        "ruflin/elastica": "^6.0@dev"
+        "ruflin/elastica": "^6.0@dev",
+        "francescomalatesta/laravel-circuit-breaker": "dev-master"
     },
     "require-dev": {},
     "autoload": {

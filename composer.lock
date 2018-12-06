@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ba5b4f6d0273e540417eed49c03a80d",
+    "content-hash": "225eaa665ea70f5641521bf2a8e25a32",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -341,6 +341,65 @@
                 "parser"
             ],
             "time": "2018-06-11T18:15:32+00:00"
+        },
+        {
+            "name": "francescomalatesta/laravel-circuit-breaker",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/francescomalatesta/laravel-circuit-breaker.git",
+                "reference": "4095cd6fe96d7b70f5886b8df6dbc7f2f1eda16e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/francescomalatesta/laravel-circuit-breaker/zipball/4095cd6fe96d7b70f5886b8df6dbc7f2f1eda16e",
+                "reference": "4095cd6fe96d7b70f5886b8df6dbc7f2f1eda16e",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6",
+                "phpunit/phpunit": "~7.0",
+                "squizlabs/php_codesniffer": "^2.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "FrancescoMalatesta\\LaravelCircuitBreaker\\Provider\\CircuitBreakerServiceProvider"
+                    ],
+                    "aliases": {
+                        "CircuitBreaker": "FrancescoMalatesta\\LaravelCircuitBreaker\\Facade\\CircuitBreaker"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FrancescoMalatesta\\LaravelCircuitBreaker\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Francesco Malatesta",
+                    "email": "hellofrancesco@gmail.com",
+                    "homepage": "https://github.com/francescomalatesta",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A circuit breaker pattern implementation for the Laravel framework",
+            "homepage": "https://github.com/francescomalatesta/laravel-circuit-breaker",
+            "keywords": [
+                "circuit breaker",
+                "laravel",
+                "package"
+            ],
+            "time": "2018-04-21T19:14:30+00:00"
         },
         {
             "name": "guzzlehttp/ringphp",
@@ -2401,7 +2460,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "ruflin/elastica": 20
+        "ruflin/elastica": 20,
+        "francescomalatesta/laravel-circuit-breaker": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
