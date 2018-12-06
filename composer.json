@@ -17,7 +17,8 @@
         "toanna/laravel-5-layer": ">=1.2.0",
         "elasticsearch/elasticsearch": "^6.0",
         "ruflin/elastica": "^6.0@dev",
-        "francescomalatesta/laravel-circuit-breaker": "dev-master"
+        "francescomalatesta/laravel-circuit-breaker": "^0.1.0",
+        "carmanuelz/php-remote-config": "dev-master"
     },
     "require-dev": {},
     "autoload": {
