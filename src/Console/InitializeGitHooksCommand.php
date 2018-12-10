@@ -65,6 +65,9 @@ class InitializeGitHooksCommand extends Command
 
         /* Create php-git-hooks.yml in app root */
         $this->files->copy(__DIR__ . '/../Common/Git/php-git-hooks.yml', $basePath.'/php-git-hooks.yml');
+
+        /* Final */
+        $this->line('Success initialization.');
     }
 
     /**
