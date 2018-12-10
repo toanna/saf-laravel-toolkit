@@ -62,10 +62,10 @@ class InitializeGitHooksCommand extends Command
         $gitHooksPath = $this->makeDirectory($gitPath.'/hooks');
 
         /* Copy commit-msg to .git/hooks */
-        $this->files->copy(__DIR__ . '/commit-msg', $gitHooksPath.'/commit-msg');
+        $this->files->copy(__DIR__ . '/../Common/Git/commit-msg', $gitHooksPath.'/commit-msg');
 
         /* Create php-git-hooks.yml in app root */
-        $this->files->copy(__DIR__ . '/php-git-hooks.yml', $basePath.'/php-git-hooks.yml');
+        $this->files->copy(__DIR__ . '/../Common/Git/php-git-hooks.yml', $basePath.'/php-git-hooks.yml');
     }
 
     /**
