@@ -15,6 +15,7 @@ class SAFToolkitServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 Console\InitializeCommand::class,
+                Console\InitializeGitHooksCommand::class,
                 Console\AbstractionMakeCommand::class,
                 Console\BusinessMakeCommand::class,
                 Console\BusinessServiceMakeCommand::class,

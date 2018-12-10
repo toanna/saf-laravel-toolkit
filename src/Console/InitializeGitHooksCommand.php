@@ -55,7 +55,7 @@ class InitializeGitHooksCommand extends Command
      */
     public function handle()
     {
-        $basePath = $this->getBasePath();
+        $basePath = base_path();
 
         /* Create dir if not exists */
         $gitPath = $this->makeDirectory($basePath.'/.git');
