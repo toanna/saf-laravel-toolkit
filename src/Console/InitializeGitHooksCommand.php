@@ -58,8 +58,7 @@ class InitializeGitHooksCommand extends Command
         $basePath = base_path();
 
         /* Create dir if not exists */
-        $gitPath = $this->makeDirectory($basePath.'/.git');
-        $gitHooksPath = $this->makeDirectory($gitPath.'/hooks');
+        $gitHooksPath = $this->makeDirectory($basePath.'/.git/hooks');
 
         /* Copy commit-msg to .git/hooks */
         $this->files->copy(__DIR__ . '/../Common/Git/commit-msg', $gitHooksPath.'/commit-msg');
@@ -74,8 +73,8 @@ class InitializeGitHooksCommand extends Command
 
     protected function makeDirectory($path)
     {
-        if (! $this->files->isDirectory(dirname($path))) {
-            $this->files->makeDirectory(dirname($path), 0777, true, true);
+        if (! $this->files->isDirectory($path)) {
+            $this->files->makeDirectory($path, 0777, true, true);
         }
 
         return $path;
