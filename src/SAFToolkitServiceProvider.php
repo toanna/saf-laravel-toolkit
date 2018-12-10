@@ -10,6 +10,8 @@ class SAFToolkitServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->registerHelpers();
+
         if ($this->app->runningInConsole()) {
             $this->commands([
                 Console\InitializeCommand::class,
@@ -36,5 +38,13 @@ class SAFToolkitServiceProvider extends ServiceProvider
     public function register()
     {
         //
+    }
+
+    /**
+     * Register custom helpers
+     */
+    protected function registerHelpers()
+    {
+
     }
 }

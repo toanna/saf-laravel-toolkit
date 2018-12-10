@@ -18,7 +18,8 @@
         "elasticsearch/elasticsearch": "^6.0",
         "ruflin/elastica": "^6.0@dev",
         "francescomalatesta/laravel-circuit-breaker": "^0.1.0",
-        "carmanuelz/php-remote-config": "dev-master"
+        "carmanuelz/php-remote-config": "dev-master",
+        "bruli/php-git-hooks": "^2.0@dev"
     },
     "require-dev": {},
     "autoload": {

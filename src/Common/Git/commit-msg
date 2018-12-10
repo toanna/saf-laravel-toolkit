@@ -1,0 +1,9 @@
+#!/usr/bin/env php
+<?php
+
+namespace Toanna\SAFLaravelToolkit\Common\Git;
+
+require __DIR__.'/../../vendor/autoload.php';
+
+$hook = new CommitMsg();
+$hook->run();
