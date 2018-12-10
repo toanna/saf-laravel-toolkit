@@ -46,6 +46,14 @@ Folder structure:
             Kernel.php
 ```
 
+### Initialize git hooks
+
+After connect with your remote, run this to setup:
+
+```$xslt
+$ php artisan saf:git-hooks-init
+```
+
 ### Creating Commands
 
 Create an Abstraction Interface to `app/Abstraction/`:
