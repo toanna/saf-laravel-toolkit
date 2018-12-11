@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 
-namespace Toanna\SAFLaravelToolkit\Common\Git;
+use Toanna\SAFLaravelToolkit\Common\Git\CommitMsg;
 
 require __DIR__.'/../../vendor/autoload.php';
 
