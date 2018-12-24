@@ -19,13 +19,6 @@ class AbstractionMakeCommand extends \Toanna\Laravel5Layer\Console\AbstractionMa
     protected $description = 'Create a new Abstraction Interface';
 
     /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'saf:abstraction {name}';
-
-    /**
      * The type of class being generated.
      *
      * @var string

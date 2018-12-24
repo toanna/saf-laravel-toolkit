@@ -19,13 +19,6 @@ class ControllerMakeCommand extends \Toanna\Laravel5Layer\Console\ControllerMake
     protected $description = 'Create a new Controller Class';
 
     /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'saf:controller {name}';
-
-    /**
      * The type of class being generated.
      *
      * @var string

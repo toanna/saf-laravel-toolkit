@@ -15,12 +15,6 @@ class InitializeCommand extends \Toanna\Laravel5Layer\Console\InitializeCommand
      * @var string
      */
     protected $description = 'Init 5-layer folder structure';
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'saf:init';
 
     /**
      * The type of class being generated.

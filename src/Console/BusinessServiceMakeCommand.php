@@ -19,13 +19,6 @@ class BusinessServiceMakeCommand extends \Toanna\Laravel5Layer\Console\BusinessS
     protected $description = 'Create a new Business Service Class';
 
     /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'saf:business_service {name}';
-
-    /**
      * The type of class being generated.
      *
      * @var string

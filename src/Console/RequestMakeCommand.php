@@ -19,13 +19,6 @@ class RequestMakeCommand extends \Toanna\Laravel5Layer\Console\RequestMakeComman
     protected $description = 'Create a new Form Request Class';
 
     /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'saf:request {name}';
-
-    /**
      * The type of class being generated.
      *
      * @var string

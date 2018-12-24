@@ -18,12 +18,6 @@ class InitializeGitHooksCommand extends Command
      * @var string
      */
     protected $description = 'Init Git Hooks';
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'saf:git-hooks-init';
 
     /**
      * The type of class being generated.

@@ -19,13 +19,6 @@ class EloquentMakeCommand extends \Toanna\Laravel5Layer\Console\EloquentMakeComm
     protected $description = 'Create a new Eloquent ORM Class';
 
     /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'saf:eloquent {name}';
-
-    /**
      * The type of class being generated.
      *
      * @var string

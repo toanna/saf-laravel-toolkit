@@ -19,13 +19,6 @@ class ConsoleMakeCommand extends \Toanna\Laravel5Layer\Console\ConsoleMakeComman
     protected $description = 'Create a new Artisan Command';
 
     /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'saf:command {name}';
-
-    /**
      * The type of class being generated.
      *
      * @var string
