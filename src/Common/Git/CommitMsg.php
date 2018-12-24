@@ -10,7 +10,7 @@ use Symfony\Component\Console\Output\OutputInterface;
 class CommitMsg extends BaseCommitMsg
 {
     const INVALID_MAX_LENGTH = "Maximum 50 characters long summary commit message!";
-    const INVALID_MIN_LENGTH = "Minimum 50 characters long summary commit message!";
+    const INVALID_MIN_LENGTH = "Minimum 10 characters long summary commit message!";
     const INVALID_ISSUE      = "Invalid issue!";
     const INVALID_MESSAGE    = "Capitalize the subject line";
     const INVALID_END_COMMIT = "Do not end the subject line with a period!";
