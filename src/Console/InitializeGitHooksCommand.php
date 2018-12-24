@@ -3,6 +3,7 @@ namespace Toanna\SAFLaravelToolkit\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;
+use Symfony\Component\Process\Process;
 
 class InitializeGitHooksCommand extends Command
 {
@@ -18,6 +19,12 @@ class InitializeGitHooksCommand extends Command
      * @var string
      */
     protected $description = 'Init Git Hooks';
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
+    protected $signature = 'saf:git-hooks-init';
 
     /**
      * The type of class being generated.
@@ -56,6 +63,11 @@ class InitializeGitHooksCommand extends Command
 
         /* Copy commit-msg to .git/hooks */
         $this->files->copy(__DIR__ . '/../Common/Git/commit-msg', $gitHooksPath.'/commit-msg');
+        $this->setPermissions($gitHooksPath.'/commit-msg');
+
+        /* Copy pre-commit to .git/hooks */
+        $this->files->copy(__DIR__ . '/../Common/Git/pre-commit', $gitHooksPath.'/pre-commit');
+        $this->setPermissions($gitHooksPath.'/pre-commit');
 
         /* Create php-git-hooks.yml in app root */
         $this->files->copy(__DIR__ . '/../Common/Git/php-git-hooks.yml', $basePath.'/php-git-hooks.yml');
@@ -75,5 +87,11 @@ class InitializeGitHooksCommand extends Command
         }
 
         return $path;
+    }
+
+    private function setPermissions($file)
+    {
+        $permissions = new Process(sprintf('chmod 775 %s', $file));
+        $permissions->run();
     }
 }

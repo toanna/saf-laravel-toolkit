@@ -9,12 +9,12 @@ use Symfony\Component\Console\Output\OutputInterface;
 
 class CommitMsg extends BaseCommitMsg
 {
-    const INVALID_MAX_LENGTH = "Độ dài commit không vượt quá 50 ký tự!";
-    const INVALID_MIN_LENGTH = "Độ dài commit tối thiểu 10 ký tự!";
-    const INVALID_ISSUE      = "Mã issue không hợp lệ!";
-    const INVALID_MESSAGE    = "Chữ cái đầu tiên của mesage phải viết hoa!";
-    const INVALID_END_COMMIT = "Không được đánh dấu chấm câu ở cuối commit";
-    const VALID_COMMIT       = "Commit hợp lệ: {issue_number} {message} \nVí dụ: #68 Add IFileCreater";
+    const INVALID_MAX_LENGTH = "Maximum 50 characters long summary commit message!";
+    const INVALID_MIN_LENGTH = "Minimum 50 characters long summary commit message!";
+    const INVALID_ISSUE      = "Invalid issue!";
+    const INVALID_MESSAGE    = "Capitalize the subject line";
+    const INVALID_END_COMMIT = "Do not end the subject line with a period!";
+    const VALID_COMMIT       = "Commit pattern: {issue_number} {message} \nExample: #68 Add IFileCreater";
 
     public function doRun(InputInterface $input, OutputInterface $output)
     {
