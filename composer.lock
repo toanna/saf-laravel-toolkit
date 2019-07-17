@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fde11ed114758e369bb456eb28a900b",
+    "content-hash": "645137421b49894dc87189a88ab79ca8",
     "packages": [
         {
             "name": "beberlei/assert",
@@ -3734,12 +3734,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "62a24894e6f352e4dd4d175734fb3dc2fc7f4bfb"
+                "reference": "f6fd84859659ab25d74646e7eff7397f009e258e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/62a24894e6f352e4dd4d175734fb3dc2fc7f4bfb",
-                "reference": "62a24894e6f352e4dd4d175734fb3dc2fc7f4bfb",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f6fd84859659ab25d74646e7eff7397f009e258e",
+                "reference": "f6fd84859659ab25d74646e7eff7397f009e258e",
                 "shasum": ""
             },
             "require": {
@@ -3772,12 +3772,12 @@
                 }
             ],
             "description": "PHP_CodeSniffer tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards.",
-            "homepage": "http://www.squizlabs.com/php-codesniffer",
+            "homepage": "https://github.com/squizlabs/PHP_CodeSniffer",
             "keywords": [
                 "phpcs",
                 "standards"
             ],
-            "time": "2018-12-10T01:38:24+00:00"
+            "time": "2019-07-04T06:00:06+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",

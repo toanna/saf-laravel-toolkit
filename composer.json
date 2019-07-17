@@ -19,7 +19,8 @@
         "ruflin/elastica": "^6.0@dev",
         "francescomalatesta/laravel-circuit-breaker": "^0.1.0",
         "carmanuelz/php-remote-config": "dev-master",
-        "bruli/php-git-hooks": "^2.0@dev"
+        "bruli/php-git-hooks": "^2.0@dev",
+        "squizlabs/php_codesniffer": "*"
     },
     "require-dev": {},
     "autoload": {
