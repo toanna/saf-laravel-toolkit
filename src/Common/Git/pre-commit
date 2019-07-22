@@ -1,9 +1,14 @@
-#!/usr/bin/env php
-<?php
 
-require __DIR__.'/../../vendor/autoload.php';
+#!/bin/sh
 
-use PhpGitHooks\Infrastructure\Hook\PreCommit;
+php_cs=$(vendor/bin/phpcs --standard=PSR2 app/)
 
-$hook = new PreCommit();
-$hook->run();
+if  [ "$php_cs" != "" ];
+then
+    echo 'Warning:Clean code before commit code'
+	echo 'Show coding convention error by command: vendor/bin/phpcs --standard=PSR2 app/'
+    exit 1
+fi
+
+# If there are whitespace errors, print the offending file names and fail.
+exec git diff-index --check --cached $against --
