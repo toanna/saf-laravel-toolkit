@@ -64,7 +64,7 @@ class InitializeGitHooksCommand extends Command
         /* Copy commit-msg to .git/hooks */
         $this->files->copy(__DIR__ . '/../Common/Git/commit-msg', $gitHooksPath.'/commit-msg');
         $this->setPermissions($gitHooksPath.'/commit-msg');
-
+        dd(__DIR__ . '/../Common/Git/pre-commit);
         /* Copy pre-commit to .git/hooks */
         $this->files->copy(__DIR__ . '/../Common/Git/pre-commit', $gitHooksPath.'/pre-commit');
         $this->setPermissions($gitHooksPath.'/pre-commit');
